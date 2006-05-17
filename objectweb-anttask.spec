@@ -1,20 +1,24 @@
 Summary:	ObjectWeb Ant task
+Summary(pl):	Zadanie Anta ObjectWeb
 Name:		objectweb-anttask
 Version:	1.2
 Release:	0.1
 License:	LGPL
 Group:		Development/Languages/Java
-URL:		http://forge.objectweb.org/projects/monolog/
-BuildArch:	noarch
 Source0:	http://download.forge.objectweb.org/monolog/ow_util_ant_tasks_1.2.zip
 # Source0-md5:	59ec69d435aedeeb710229fddf5fd34c
+URL:		http://forge.objectweb.org/projects/monolog/
 BuildRequires:	jakarta-ant
 BuildRequires:	jdk
 #Provides:	owanttask
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-ObjectWeb Ant task
+ObjectWeb Ant task.
+
+%description -l pl
+Zadanie Anta ObjectWeb.
 
 %prep
 %setup -c -q -n %{name}
