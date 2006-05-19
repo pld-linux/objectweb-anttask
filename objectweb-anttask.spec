@@ -8,7 +8,7 @@ Group:		Development/Languages/Java
 Source0:	http://download.forge.objectweb.org/monolog/ow_util_ant_tasks_1.2.zip
 # Source0-md5:	59ec69d435aedeeb710229fddf5fd34c
 URL:		http://forge.objectweb.org/projects/monolog/
-BuildRequires:	jakarta-ant
+BuildRequires:	ant
 BuildRequires:	jdk
 #Provides:	owanttask
 BuildArch:	noarch
