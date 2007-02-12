@@ -1,5 +1,5 @@
 Summary:	ObjectWeb Ant task
-Summary(pl):	Zadanie Anta ObjectWeb
+Summary(pl.UTF-8):   Zadanie Anta ObjectWeb
 Name:		objectweb-anttask
 Version:	1.2
 Release:	0.1
@@ -17,7 +17,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 ObjectWeb Ant task.
 
-%description -l pl
+%description -l pl.UTF-8
 Zadanie Anta ObjectWeb.
 
 %prep
