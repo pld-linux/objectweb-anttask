@@ -1,5 +1,5 @@
 Summary:	ObjectWeb Ant task
-Summary(pl.UTF-8):   Zadanie Anta ObjectWeb
+Summary(pl.UTF-8):	Zadanie Anta ObjectWeb
 Name:		objectweb-anttask
 Version:	1.2
 Release:	0.1
