@@ -1,0 +1,11 @@
+--- objectweb-anttask/build.xml~	2004-08-26 18:21:06.000000000 +0300
++++ objectweb-anttask/build.xml	2007-04-18 02:19:28.633741968 +0300
+@@ -8,7 +8,7 @@
+ 	
+ 	<target name="compile">
+ 		<mkdir dir="${out.build}"/>
+-		<javac srcdir="${prj.src}" destdir="${out.build}" debug="on">
++		<javac source="${compile.source}" srcdir="${prj.src}" destdir="${out.build}" debug="on">
+ 			<include name="**/*.java"/>
+ 		</javac>
+ 	</target>
