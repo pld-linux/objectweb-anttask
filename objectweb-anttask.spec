@@ -8,9 +8,9 @@ License:	LGPL
 Group:		Development/Languages/Java
 Source0:	http://download.forge.objectweb.org/monolog/ow_util_ant_tasks_%{version}.zip
 # Source0-md5:	59ec69d435aedeeb710229fddf5fd34c
+Patch0:		%{name}-source.patch
 URL:		http://forge.objectweb.org/projects/monolog/
 BuildRequires:	ant
-Patch0:		%{name}-source.patch
 BuildRequires:	jdk
 BuildRequires:	jpackage-utils
 BuildRequires:	rpm-javaprov
