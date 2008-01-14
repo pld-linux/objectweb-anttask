@@ -17,6 +17,8 @@ BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
 BuildRequires:	xalan-j
 Requires:	ant >= 1.7
+# for dependency component
+Suggests:	asm2 >= 2.1
 #Provides:	owanttask
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
