@@ -2,20 +2,21 @@
 Summary:	ObjectWeb Ant task
 Summary(pl.UTF-8):	Zadanie Anta ObjectWeb
 Name:		objectweb-anttask
-Version:	1.2
+Version:	1.3.2
 Release:	0.1
 License:	LGPL
 Group:		Development/Languages/Java
 Source0:	http://download.forge.objectweb.org/monolog/ow_util_ant_tasks_%{version}.zip
-# Source0-md5:	59ec69d435aedeeb710229fddf5fd34c
-Patch0:		%{name}-source.patch
+# Source0-md5:	cd602bf75a0feab480fa97739955b84e
+Patch0:		%{name}-ant.patch
 URL:		http://forge.objectweb.org/projects/monolog/
-BuildRequires:	ant
+BuildRequires:	ant >= 1.7
 BuildRequires:	jdk
 BuildRequires:	jpackage-utils
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
 BuildRequires:	xalan-j
+Requires:	ant >= 1.7
 #Provides:	owanttask
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -29,13 +30,15 @@ Zadanie Anta ObjectWeb.
 %prep
 %setup -c -q -n %{name}
 %patch0 -p1
-find -name '*.class' -o -name '*.jar' | xargs rm -rf
+
+find output -name '*.class' | xargs rm -f
+rm externals/ant.jar
 
 %build
+# use bundled asm-2.1 for build to avoid loop (asm2 BR: objectweb-anttask)
 required_jars="xalan"
-export CLASSPATH=$(build-classpath $required_jars)
+export CLASSPATH="$(build-classpath $required_jars):externals/asm-2.1.jar"
 %ant jar \
-	-Dcompile.source=1.4 \
 	-Dbuild.compiler=modern
 
 %install
