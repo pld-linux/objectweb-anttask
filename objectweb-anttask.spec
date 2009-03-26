@@ -3,7 +3,7 @@ Summary:	ObjectWeb Ant task
 Summary(pl.UTF-8):	Zadanie Anta ObjectWeb
 Name:		objectweb-anttask
 Version:	1.3.2
-Release:	0.1
+Release:	1
 License:	LGPL
 Group:		Development/Languages/Java
 Source0:	http://download.forge.objectweb.org/monolog/ow_util_ant_tasks_%{version}.zip
