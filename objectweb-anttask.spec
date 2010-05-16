@@ -15,6 +15,7 @@ BuildRequires:	jdk
 BuildRequires:	jpackage-utils
 BuildRequires:	rpm-javaprov
 BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	unzip
 BuildRequires:	xalan-j
 Requires:	ant >= 1.7
 # for dependency component
