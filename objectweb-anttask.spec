@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.java
 Summary:	ObjectWeb Ant task
 Summary(pl.UTF-8):	Zadanie Anta ObjectWeb
 Name:		objectweb-anttask
